@@ -508,7 +508,7 @@ function closeCheckoutModal(){
 
 
 const nomorWA =
-"6281541374258";
+"6285789537497";
 
 function sendWhatsappOrder(){
     
