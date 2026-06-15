@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZAEFEAST | Makanan Lezat Harga Bersahabat</title>
+
+<link rel="icon" type="image/png" href="images/logo.png">
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- ========================= -->
+<!-- NAVBAR -->
+<!-- ========================= -->
+
+<nav class="navbar">
+
+    <div class="logo">
+
+        <img src="images/logo.png">
+
+        <div>
+
+            <h2>ZAEFEAST</h2>
+
+            <span class="tagline">
+                Makanan Lezat & Bersahabat
+            </span>
+
+        </div>
+
+    </div>
+
+    <div class="nav-links">
+
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#promo">Promo</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+
+    </div>
+
+    <div class="menu-toggle">
+        ☰
+     </div>
+
+</nav>
+
+<!-- ========================= -->
+<!-- HERO -->
+<!-- ========================= -->
+
+<section class="hero" id="home">
+
+<div class="hero-overlay"></div>
+
+<div class="hero-content">
+
+<h1>
+
+Nikmati Makanan Favoritmu
+
+<span class="highlight">
+Tanpa Ribet
+</span>
+
+</h1>
+
+<p>
+
+Menu lezat, harga bersahabat,
+siap menemani hari Anda.
+
+</p>
+
+<div class="hero-buttons">
+
+<button class="btn-primary"
+onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+
+    Pesan Sekarang
+
+</button>
+
+<button class="btn-secondary"
+onclick="document.getElementById('menu').scrollIntoView({behavior:'smooth'})">
+
+    Lihat Menu
+
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- INFO BAR -->
+<!-- ========================= -->
+
+<section class="info-bar">
+
+<div class="info-box">
+
+<i class="fa-solid fa-burger"></i>
+
+<h4>50+</h4>
+
+<p>Menu Pilihan</p>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-users"></i>
+
+<h4>5000+</h4>
+
+<p>Pelanggan</p>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-star"></i>
+
+<h4>4.9</h4>
+
+<p>Rating</p>
+
+</div>
+
+<div class="info-box">
+
+<i class="fa-solid fa-truck-fast"></i>
+
+<h4>Fast</h4>
+
+<p>Delivery</p>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SEARCH -->
+<!-- ========================= -->
+
+<section class="search-section">
+
+<div class="search-box">
+
+<i class="fa-solid fa-magnifying-glass"></i>
+
+<input
+type="text"
+id="searchInput"
+placeholder="Cari makanan favoritmu..."
+>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CATEGORY -->
+<!-- ========================= -->
+
+<section class="categories">
+
+<button class="category active">
+
+🍽 Semua
+
+</button>
+
+<button class="category">
+
+🍗 Makanan
+
+</button>
+
+<button class="category">
+
+🥤 Minuman
+
+</button>
+
+<button class="category">
+
+🍟 Snack
+
+</button>
+
+<button class="category">
+
+🍰 Dessert
+
+</button>
+
+<button class="category">
+
+☕ Coffee
+
+</button> 
+
+</section>
+
+<!-- ========================= -->
+<!-- PROMO -->
+<!-- ========================= -->
+
+<section id="promo" class="promo-section">
+
+<div class="section-title">
+
+<h2>Promo Hari Ini</h2>
+
+<p>
+Jangan lewatkan promo spesial
+hari ini
+</p>
+
+</div>
+
+<div class="promo-container">
+
+<div class="promo-card">
+
+<h3>CATERING</h3>
+
+<p>Order Lebih Banyak & Dapatkan Harga Spesial</p>
+
+</div>
+
+<div class="promo-card">
+
+<h3>Gratis</h3>
+
+<p>Es Teh Manis</p>
+
+</div>
+
+<div class="promo-card">
+
+<h3>BOGO</h3>
+
+<p>Buy 1 Get 1</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- BEST SELLER -->
+<!-- ========================= -->
+
+<section class="best-seller">
+
+<div class="section-title">
+
+<h2>Best Seller</h2>
+
+<p>⭐ yam Geprek ⭐</p>
+<p>⭐ Kopi Gula Aren ⭐</p>
+
+</div> 
+
+<div class="best-seller-slider">
+
+<!-- nanti JS -->
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- MENU -->
+<!-- ========================= -->
+
+<section class="menu-section" id="menu">
+
+<div class="section-title">
+
+<h2>Semua Menu</h2>
+
+<p>Pilih makanan favoritmu</p>
+
+</div>
+
+<div id="menuContainer"
+class="menu-grid">
+
+<!-- script -->
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- TESTIMONI -->
+<!-- ========================= -->
+
+<section class="testimonials">
+
+<div class="section-title">
+
+<h2>Apa Kata Mereka?</h2>
+
+</div>
+
+<div class="testimonial-container">
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Makanannya enak banget dan
+pengirimannya cepat.
+
+</p>
+
+<h4>- Andi</h4>
+
+</div>
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Harga murah tapi kualitas
+premium.
+
+</p>
+
+<h4>- Budi</h4>
+
+</div>
+
+<div class="testimonial">
+
+⭐⭐⭐⭐⭐
+
+<p>
+
+Pasti order lagi.
+
+</p>
+
+<h4>- Sinta</h4>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- ABOUT -->
+<!-- ========================= -->
+
+<section id="about" class="about">
+
+<div class="section-title">
+
+<h2>Tentang Kami</h2>
+
+</div>
+
+<p>
+
+ZAEFEAST hadir untuk memberikan
+pengalaman kuliner terbaik dengan
+harga yang tetap ramah di kantong.
+
+Kami percaya makanan yang baik
+harus bisa dinikmati semua orang.
+
+</p>
+
+</section>
+
+<!-- ========================= -->
+<!-- LOCATION -->
+<!-- ========================= -->
+
+<section class="location">
+
+<div class="section-title">
+
+<h2>Lokasi Kami</h2>
+
+</div>
+
+<div class="map-container">
+
+<iframe
+src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d496.30108625902636!2d105.60617052140172!3d-5.653871339438457!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2skh!4v1781351679942!5m2!1sen!2skh"
+width="100%"
+height="400"
+style="border:0;"
+allowfullscreen=""
+loading="lazy">
+
+</iframe>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- CONTACT -->
+<!-- ========================= -->
+
+<section id="contact" class="contact">
+
+<div class="section-title">
+
+<h2>Hubungi Kami</h2>
+
+</div>
+
+<div class="contact-grid">
+
+<div class="contact-card">
+
+<i class="fa-brands fa-whatsapp"></i>
+
+<h3>WhatsApp</h3>
+
+<p>+62 815-4137-4258</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-phone"></i>
+
+<h3>Telepon</h3>
+
+<p>+62 815-4137-4258</p>
+
+</div>
+
+<div class="contact-card">
+
+<i class="fa-solid fa-envelope"></i>
+
+<h3>Email</h3>
+
+<p>zaefeast1@gmail.com</p>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- SOCIAL -->
+<!-- ========================= -->
+
+<section class="social-media">
+
+<h2>Ikuti Kami</h2>
+
+<div class="social-icons">
+
+<a href="#">
+
+<i class="fab fa-facebook"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-instagram"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-tiktok"></i>
+
+</a>
+
+<a href="#">
+
+<i class="fab fa-youtube"></i>
+
+</a>
+
+</div>
+
+</section>
+
+<!-- ========================= -->
+<!-- FOOTER -->
+<!-- ========================= -->
+
+<footer>
+
+<p>
+
+© 2026 ZAEFEAST
+All Rights Reserved
+
+</p>
+
+</footer>
+
+<!-- ========================= -->
+<!-- FLOATING CART -->
+<!-- ========================= -->
+
+<div class="floating-cart"
+id="floatingCart">
+
+<i class="fa-solid fa-cart-shopping"></i>
+
+<span id="cartCount">
+
+0
+
+</span>
+
+</div>
+
+<!-- ========================= -->
+<!-- CART SIDEBAR -->
+<!-- ========================= -->
+
+<div class="cart-sidebar"
+id="cartSidebar">
+
+<div class="cart-header">
+
+<h2>Keranjang</h2>
+
+<button id="closeCart">
+
+✕
+
+</button>
+
+</div>
+
+<div id="cartItems">
+
+</div>
+
+<div class="cart-footer">
+
+<div class="cart-total">
+    
+
+<span>Total</span>
+
+<h3 id="totalPrice">
+
+Rp 0
+
+</h3>
+
+
+</div>
+
+<button
+class="checkout-btn"
+onclick="openCheckoutModal()">
+
+    Checkout WhatsApp
+
+</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+<div class="checkout-modal" id="checkoutModal">
+
+    <div class="checkout-modal-content">
+
+        <div class="modal-header">
+
+            <h2>Data Pemesan</h2>
+
+            <button onclick="closeCheckoutModal()">
+                ✕
+            </button>
+
+        </div>
+
+        <div class="modal-body">
+
+            <input
+                type="text"
+                id="customerName"
+                placeholder="Nama Lengkap"
+            >
+
+            <input
+                type="text"
+                id="customerAddress"
+                placeholder="Alamat Lengkap"
+            >
+
+            <textarea
+                id="customerNote"
+                placeholder="Catatan Pesanan (Opsional)"
+                rows="4"></textarea>
+
+            <button
+                class="confirm-order-btn"
+                onclick="sendWhatsappOrder()">
+
+                Kirim Pesanan
+
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
