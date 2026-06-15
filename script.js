@@ -558,7 +558,7 @@ if(!alamat){
 }
 
 let pesan =
-"🍽️ *PESANAN BARU ZAFFEAST*%0A%0A";
+"🍽️ *PESANAN BARU ZAEFEAST*%0A%0A";
 
 pesan +=
 "👤 DATA PEMESAN%0A";
